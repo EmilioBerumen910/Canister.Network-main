@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anybody', cursive;
+    overflow-x: hidden; 
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color:wheat;  
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      h1{
+        padding-top: 20px;
+        color: #fba92c;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+.contact-info{
+
+    width: 100%;
+margin: auto;
+text-align: center;
+padding-top: 20px ;
+background:white;
+
+
+}
+
+p{
+  padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 26pt;
+    text-align: justify;
+    text-align: center;
+}
+
+.Qr img{
+  padding-top: 30px;
+  width: 30px;
+  height: 30px;
+}

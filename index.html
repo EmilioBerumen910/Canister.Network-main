@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canister</title>
+    <link rel="stylesheet" href="connecting.css">
+    <link rel="stylesheet" href="VideoGallery.css">
+    <link rel="stylesheet" href="FinalPart.css">
+    <link rel="stylesheet" href="Themes.css">
+    <link rel="stylesheet" href="FilmRow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+.flash-card {
+            display: flex;
+            flex-direction: column;
+            background-color:  #f2f2f2;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .flash-card-image {
+            text-align: center;
+        }
+        .flash-card-image img {
+            max-width: 60%;
+            border-radius: 50%;
+        }
+        .flash-card-content {
+            text-align: justify;
+            padding: 10px 0;
+        }
+        .video-container {
+            text-align: center;
+        }
+        iframe {
+            max-width: 100%;
+        }
+
+        a{
+    color: #fba92c;
+    padding-right: 30px;
+  }
+
+  a:link{
+    text-decoration: none;
+  }
+        @media screen and (min-width: 768px) {
+            .flash-card {
+                flex-direction: row;
+            }
+            .flash-card-image {
+                flex: 1;
+                text-align: center;
+                margin-right: 10px;
+            }
+            .flash-card-content {
+                flex: 2;
+            }
+            .video-container {
+                flex: 1;
+                text-align: center;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>  
+
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+<script type="module" src="index.js"></script>
+
+
+<section>
+  <ul>
+    <li><a href="ContactUS.html">Contact Us</a></li>
+    <li><a href="FAQs.html">FAQs</a></li>
+
+  </ul>
+    <div class="hero">
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="images/Pexels Videos 2512876.mp4" type="video/mp4">
+      </video>
+        <div class="content">
+        <h1>Canister</h1>
+        <a href="Explore/Portafolio.html" class="hero-btn">Explore</a>
+      </div>
+    </div>
+  </section>
+<!-------------------------------------------------Who are we-------------------------------------------------->
+<section class="pilars">
+    <h1>Art from Students to Students</h1>
+    <p>Canister is a Web Platafrom where Full Sail students in any degree can share their art.</p>
+</section>
+
+<!-------------------------------------------------Students-------------------------------------------------->
+<section class="Student-Carousel">
+  <h1 class="Students title">Filmmakers to<br>follow</h1>
+  <div class="Student-carousel-container">
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/MarioRangel.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/MarioRangelBio.jpg" alt="Mario Rangel" class="profile__image"></a></figure>
+      <div class="profile__name">Mario<br> Rangel</div>
+      <div class="profile__title">Film Production Master's</div>
+      <div class="profile__date">Graduation Date: February 2023</div>
+    </div>
+
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/JacobHightower.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/JacobHightower.jpg" alt="Jacob Hightower" class="profile__image"></a></figure>
+      <div class="profile__name">Jacob Hightower</div>
+      <div class="profile__title">Film Production Master's</div>
+      <div class="profile__date">Graduation Date: September 2022</div>
+    </div>
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/NataliaGonzales.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/NataliaGonzales.jpg" alt="Natalia Gonzales" class="profile__image"></a></figure>
+      <div class="profile__name">Natalia Gonzales</div>
+      <div class="profile__title">Film Production Master's</div>
+      <div class="profile__date">Graduation Date: April 2023</div>
+    </div>
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/MateoBekich.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/MateoBekich.jpg" alt="Mateo Bekich" class="profile__image"></a></figure>
+      <div class="profile__name">Mateo<br> Bekich</div>
+      <div class="profile__title">Bachelor of Science in Film</div>
+      <div class="profile__date">Graduation Date: May 2023</div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------Films Carousel-------------------------------------------------->
+
+<section class="Film-carousel">
+    <h1 >New Films</h1>
+    <div class="Film-carousel-container">
+
+      <div class="Film-carousel-slide">
+          <figure> <video video id="DetachedFilm" controls class="Film-video" poster="Films/Mario Rangel Films/MarioRangelDetached.jpeg"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/MarioRangel.html"><br> 5 min | Drama | Mario Rangel</a></figcaption>
+        </a>
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a style="text-decoration: none; color: black;"target="_blank"   href="https://www.youtube.com/watch?v=6XvanwXIfPw&ab_channel=FabiolaCampos">
+          <figure> <video class="Film-video" target="_blank" poster="Films/Fabiola Campos Films/WhoAmI.jpeg"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/FabiolaCampos.html"><br> 4 min | Bio | FabioLa Campos</a></figcaption>
+        </a>
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a style="text-decoration: none; color: black;"target="_blank"  href="https://www.youtube.com/watch?v=aNZGk-S_dIk&ab_channel=JakeHightower">
+          <figure> <video class="Film-video"poster="Films/Jacob Hightower/NightOut.jpeg">
+          </video></figure>
+          <figcaption class="Caption-FmName" > <a style="text-decoration: none; color: #fba92c;" href="Explore/JacobHightower.html"><br> 5 min | Thriller | Jacob Hightower</a> </figcaption>
+        </a>
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a style="text-decoration: none; color: black;"target="_blank"  href="https://www.youtube.com/watch?v=9YRBnw9xLHk&ab_channel=MykytaKrav%C4%8Denko">
+          <figure> <video class="Film-video" poster="Films/Mykyta Kravčenko Films/MykytaKravčenkoButImAlive.jpeg">
+          </video></figure>
+          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;" href="Explore/MykytaKtavčenko.html"><br> 3 min | Bio | Mykyta Kravčenko </a></figcaption>
+        </a>
+      </div>
+      
+    </div>
+  </section>
+
+<!-----------------------------------------------------Themes---------------------------------------------------------->
+<section class="Theme">
+
+    <h1>Watch Short Film</h1>
+
+
+    <div class="Themerow">
+        <div class="Theme-col">
+            <div class="grow">
+                <a href="Themes/TerrorTheme.html"> <img src="images/ThemeImages/Terror.jpeg" alt="Terror" style="width:85%"></a>
+        </div>
+        </div>
+        <div class="Theme-col">
+            <div class="grow">
+                <a href="Themes/ComedyTheme.html"> <img src="images/ThemeImages/Comedy.jpeg" alt="Comedy" style="width:85%"></a>
+            </div>
+        </div>
+        <div class="Theme-col">
+            <div class="grow">
+                <a href="Themes/DramaTheme.html"> <img src="images/ThemeImages/Drama.jpeg" alt="Drama" style="width:85%"></a>
+            </div>
+        </div>
+        <div class="Theme-col">
+            <div class="grow">
+                <a href="Themes/BioTheme.html"> <img src="images/ThemeImages/Bio.jpeg" alt="Bio" style="width:85%"></a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-------------------------------------------------Color Grading------------------------------------------------------>
+<section  >
+
+  <div class="flash-card">
+    <div class="flash-card-image">
+        <img src="images/PPs/AlvaroValenzuela.jpg" alt="Profile Image">
+    </div>
+    <div class="flash-card-content">
+        <h2 style="  letter-spacing: 5px;">Alvaro Valenzuela | Colorist</h2>
+        <p style="  letter-spacing: 2px;line-height: 1.9" >Alvaro Valenzuela is a 20 years old Orlando-based landscape photographer and digital colorist who has worked in all sort of projects in Los Angeles, Atlanta, Orlando, Miami, Chile, and India. In Chile, he started his career as a freelance photographer and get the Color Grading Davinci Resolve Certificate. In the United States, he had the opportunity to work in different short films and music video projects. He is a film gradute from Full Sail University.
+          From his early experiences in landscape photography, he moved into film starting as a freelance filmmaker, and then focalizing into color grading. This, together with his personal studies, contributed to shape him and build his way as a Digital Colorist and Camera Operator.
+          Available to work with Davinci Resolve (with own grading suite).</p>
+        <a href="https://alvarovalenzuela.com/" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-dribbble"></a>
+        <a href="https://www.instagram.com/alvarockk_/" target="_blank"   style="font-size:36px;" rel="noopener noreferrer" class="fa fa-instagram"></a>
+  
+    
+      </div>
+    <div class="video-container">
+      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="356" height="200" type="text/html" src="https://www.youtube.com/embed/uCr5OVZi7vE?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://sms-lån-utan-uc.nu/">sms lån utan uc med betalningsanmärkningar</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="https://beviljaralla.se/">beviljaralla.se</a></small></div></iframe>    </div>
+
+
+</div>
+
+
+
+
+
+</section>
+<!-------------------------------------------------Musician's------------------------------------------------------>
+
+<section class="Student-Carousel">
+  <h1 class="Students title">Musician's to<br>follow</h1>
+  <div class="Student-carousel-container">
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/CelestinoDuley.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/CelestinoDuley.jpg" alt="Celestino Duley" class="profile__image"></a></figure>
+      <div class="profile__name">Celestino<br> Duley</div>
+      <div class="profile__title">Music Production Bachelors</div>
+      <div class="profile__date">Graduation Date: February 2023</div>
+    </div>
+
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/Sheiq.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/Sheiq.jpg" alt="Sheiq" class="profile__image"></a></figure>
+      <div class="profile__name">Sheiq<br></div>
+      <div class="profile__title">Music Production Bachelors</div>
+      <div class="profile__date">Graduation Date: September 2023</div>
+    </div>
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/DavidTrujillo.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/DavidTrujillo.jpg" alt="David Trujillo" class="profile__image"></a></figure>
+      <div class="profile__name">David Trujillo</div>
+      <div class="profile__title">Music Production Bachelors</div>
+      <div class="profile__date">Graduation Date: February 2024</div>
+    </div>
+
+    <div class="Student-carousel-slide">
+      <figure><a href="Explore/Ferro.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/Ferro.jpeg" alt="Feroo" class="profile__image"></a></figure>
+      <div class="profile__name">FERRO</div>
+      <div class="profile__title">Recording arts</div>
+      <div class="profile__date">Graduation Date: September 2024</div>
+    </div>
+
+</section>
+
+<!-------------------------------------------------New Music-------------------------------------------------->
+
+<section class="Film-carousel">
+  <h1 >New Music</h1>
+  <div class="Film-carousel-container">
+
+    <div class="Film-carousel-slide">
+      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=nr6fsdPsn1g&ab_channel=Sheiq">
+        <figure> <video class="Film-video" poster="Films/Sheiq Films/LaDeSiempreMusicVideo.png"></video></figure>
+        <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/Sheiq.html"><br> Latin Music | Sheiq</a></figcaption>
+      </a>
+
+    </div>
+
+    <div class="Film-carousel-slide">
+      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=tdOOK3l4IlU&ab_channel=ApolloCosmo">
+        <figure> <video class="Film-video" poster="Films/Apollo Cosmo Films/Homeostais.png"></video></figure>
+        <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/ApolloCosmo.html"><br> Rap | Apollo Cosmo</a></figcaption>
+      </a>
+    </div>
+
+    <div class="Film-carousel-slide">
+      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=d2wqGGUJ3po&ab_channel=JuanHerrera">
+        <figure> <video class="Film-video"poster="Films/Juan Herrera Films/DejameIr.png">
+        </video></figure>
+        <figcaption class="Caption-FmName" > <a style="text-decoration: none; color: #fba92c;" href="Explore/JuanHerrera.html"><br> Latin Music | Juan Herrera </a> </figcaption>
+      </a>
+    </div>
+
+    <div class="Film-carousel-slide">
+      <a target="_blank" style="text-decoration: none; color: black;"  href="https://www.youtube.com/watch?v=j0S6yfzvmCE&ab_channel=SmokeTheRapper">
+        <figure> <video class="Film-video" poster="Films/SmokeTheRapper/Dance.jpeg">
+        </video></figure>
+        <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;" href="Explore/SmokeTheRapper.html"><br> Rap | SmokeTheRapper </a></figcaption>
+      </a>
+    </div>
+    
+  </div>
+
+  
+</section>
+
+<!-------------------------------------------------Final Zone-------------------------------------------------->
+
+
+<section>
+
+  <div class="sticky">
+    <h2>Art from Students to Students</h2>
+  </div>
+
+</section>
+
+
+
+</body>
+</html>
+

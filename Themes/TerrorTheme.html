@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../FinalPartProfiles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Anybody', cursive;
+      }
+      .cover-image {
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/ThemeImages/Terror.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+
+      .videos-container {
+        display: flex;
+      flex-wrap: wrap;
+     justify-content: center;
+     padding-left: 50px;
+     padding-top: 70px;
+     padding-bottom: 70px;
+      }
+
+      .video {
+        width: 40rem;
+      box-sizing: border-box;
+       padding: 10px;
+       padding-bottom: 50px;
+      }
+
+       .video a{
+        width: 100%;  
+       height: 100%;
+      border: none;
+         }
+
+         
+         .video video{
+        width: 100%;  
+       height: 100%;
+      border: none;
+         }
+
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .video:hover .middle {
+    color: crimson;
+    opacity: 1;
+  }
+
+  .video:hover img {
+    color: crimson;
+    opacity: 0.3;
+  }
+    </style>
+  </head>
+
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script type="module" src="/index.js"></script>
+    <div class="cover-image">  <a href="../index.html"><img src="../images/NEWLOGO-remove.png"></a> </div>
+
+    <section>
+        <div class="videos-container">
+
+            <div class="video">
+                <a target="_blank"  href="https://www.youtube.com/watch?v=6Pd8ETWHsKo&ab_channel=JakeHightower"><img  class="Film-img" src="../Films/Jacob Hightower/Appettie.jpeg" alt="Appettie" style="width:100%" /></a>
+                <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName"><a href="../Explore/JacobHightower.html"><br>4 min |Jacob Hightower</a>  </figcaption>
+            </div>
+
+            <div class="video">
+                <a target="_blank"   href="https://www.youtube.com/watch?v=mNDnWPkB2f0&ab_channel=JakeHightower"><img  class="Film-img" src="../Films/Jacob Hightower/Outside.jpeg" alt="Outside" style="width:100%" /></a>
+                <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName"><a href="../Explore/JacobHightower.html"><br>8 min | Jacob Hightower</a> </figcaption>
+          </div>
+
+          <div class="video">
+            <a target="_blank"  href="https://www.youtube.com/watch?v=aNZGk-S_dIk&ab_channel=JakeHightower"><img  class="Film-img" src="../Films/Jacob Hightower/NightOut.jpeg" alt="NightOut" style="width:100%" /></a>
+            <div class="middle">
+            </div>
+            <figcaptio class="Caption-FmName"><a href="../Explore/JacobHightower.html"><br>5 min | Jacob Hightower</a> </figcaption>
+           </div> 
+
+           <div class="video">
+
+            <video id="BirthDayCakeFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MarioRnagel_BirthDayCake.png" alt="BirthDay Cake" style="width:100%" ></video>
+            <div class="middle">
+              </div>
+              <figcaptio class="Caption-FmName"><a href="../Explore/MarioRangel.html"><br><br>6 min | Mario Rangel</a></figcaption>
+
+        </div>
+
+        <div class="video">
+          <video id="TBWEGUFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MARIORANGELTBTEGU.jpeg" alt="TBWEGU" style="width:100%" ></video>
+          <div class="middle">
+          </div>
+          <figcaptio class="Caption-FmName"><a href="../Explore/MarioRangel.html"><br><br>1 min | MarioRangel </figcaption>
+        </div>
+
+        <div class="video">
+          <a target="_blank" href="https://www.youtube.com/watch?v=y2ptyLtEfHE&ab_channel=MateoBekich"
+          ><img  class="Film-img" src="../Films/Mateo Bekich Films/DingDing.jpeg" alt="DingDing" style="width:100%" /></a> 
+          <div class="middle">
+          </div>
+          <figcaptio class="Caption-FmName"><a href="../Explore/MateoBekich.html"><br> 7 min | Mateo Bekich </a></figcaption>
+      </div>
+        
+        <div class="video">
+          <video id="VanitasFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MarioRangelVanitas.jpeg" alt="Vanitas" style="width:100%" ></video>                
+          <div class="middle">
+            </div>
+            <figcaptio class="Caption-FmName"><a href="../Explore/MarioRangel.html"><br>6 min | Mario Rangel </figcaption>
+        </div>
+
+
+
+        <div class="video">
+          <a target="_blank"  href="https://www.youtube.com/watch?v=jQv0wg4-0IE&t=312s&ab_channel=MarioRangel"><img  class="Film-img" src="../Films/Mario Rangel Films/MarioRangelPICTOREM.jpeg" alt="PICTOREM" style="width:100%" /></a>
+          <div class="middle">
+          </div>
+          <figcaptio class="Caption-FmName"><a href="../Explore/MarioRangel.html"><br>6 min | Mario Rangel</a>  </figcaption>
+      </div>
+
+
+          
+
+
+              
+
+          </div> 
+    </section>
+
+    <section>
+
+        <div class="stickyActors">
+          <h2>Art from Students to Students</h2>
+          <a href="/Explore/Portafolio.html" class="hero-btn">Explore</a>
+        </div>
+      
+      </section>
+      
+  </body>
+</html>

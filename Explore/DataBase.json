@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Mario Rangel",
+    "program": "Film Master",
+    "image": "../images/PPs/MarioRangelBio.jpg",
+    "portafolio": "MarioRangel.html"
+  },
+
+  {
+    "name": "Natalia Gonzales",
+    "program": "Film Master",
+    "image":"../images/PPs/NataliaGonzales.jpg",
+    "portafolio": "NataliaGonzales.html"
+  },
+
+  {
+    "name": "Mateo Bekich",
+    "program": "Film Bachelor",
+    "image":"../images/PPs/MateoBekich.jpg",
+    "portafolio": "MateoBekich.html"
+  },
+
+  {
+    "name": "Jacob Hightower",
+    "program": "Film Master",
+    "image":"../images/PPs/JacobHightower.jpg",
+    "portafolio": "JacobHightower.html"
+  },
+
+  {
+    "name": "Fabiola Campos",
+    "program": "Film Bachelor",
+    "image":"../images/PPs/FabiolaCampos.jpg",
+    "portafolio": "FabiolaCampos.html"
+  },
+
+  {
+    "name": "Mykyta Ktavčenko",
+    "program": "Film Associate",
+    "image":"../images/PPs/MykytaKtavčenko.jpg",
+    "portafolio": "MykytaKtavčenko.html"
+  },
+
+  {
+    "name": "Sheiq ",
+    "program": "Music Production Bachelors",
+    "image":"../images/PPs/Sheiq.jpg",
+    "portafolio": "Sheiq.html"
+  }
+  ,
+  {
+    "name": "Celestino Duley",
+    "program": "Music Production Bachelors",
+    "image":"../images/PPs/CelestinoDuley.jpg",
+    "portafolio": "CelestinoDuley.html"
+  }
+  ,
+  {
+    "name": "Alvaro Valenzuela",
+    "program": "Film Associate",
+    "image":"../images/PPs/AlvaroValenzuela.jpg",
+    "portafolio": "AlvaroValenzuela.html"
+  }
+
+  ,
+  {
+    "name": "David Trujillo",
+    "program": "Music Production Bachelors",
+    "image":"../images/PPs/DavidTrujillo.jpg",
+    "portafolio": "DavidTrujillo.html"
+  }
+  ,
+  {
+    "name": "FERRO",
+    "program": "Recording arts",
+    "image":"../images/PPs/Ferro.jpeg",
+    "portafolio": "Ferro.html"
+  }
+  ,
+  {
+    "name": "Apollo",
+    "program": "Music Production Bachelors",
+    "image":"../images/PPs/ApolloCosmo.jpg",
+    "portafolio": "ApolloCosmo.html"
+  }
+  ,
+  {
+    "name": "Juan Herrera",
+    "program": "Music Business",
+    "image":"../images/PPs/JuanHerrara.jpg",
+    "portafolio": "JuanHerrera.html"
+  }
+  ,
+  {
+    "name": "Smoke TheRapper",
+    "program": "Recording arts",
+    "image":"../images/PPs/SmokeTheRapper.jpg",
+    "portafolio": "SmokeTheRapper.html"
+  }
+
+
+]

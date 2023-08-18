@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../FinalPartProfiles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Anybody', cursive;
+      }
+      .cover-image {
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/PhoenCanisterBackGround.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .cover-image a {
+        padding: 2rem; 
+        }
+      .profile-image {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        background-image: url('../images/PPs/MarioRangelBio.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: -115px;
+        margin-left: 50px;
+        border: 5px solid #fff;
+      }
+      .profile-name {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-left: 400px;
+        margin-top: -205px;
+        color: black;
+        text-decoration: none;
+      }
+      .profile-description {
+        font-size: 1.5rem;
+        margin-left: 400px;
+        margin-top: 20px;
+        color: black;
+      }
+      
+    .profile-description a  {
+      color: red;
+    }
+
+      .MasteryJournal video{
+        width: 30rem;
+        height: 20rem;
+        margin-top: 100PX;
+        margin-left: 50px;
+      }
+
+
+
+
+      .videos-container {
+        display: flex;
+      flex-wrap: wrap;
+     justify-content: center;
+     padding-top: 50px;
+     padding-bottom: 50PX;
+      }
+
+      .video {
+        width: 45rem;
+      box-sizing: border-box;
+       padding: 10px;
+      }
+
+       .video a{
+        width: 100%;  
+       height: 100%;
+      border: none;
+         }
+
+         .video video{
+        width: 100%;  
+       height: 100%;
+      border: none;
+         }
+
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .video:hover .middle {
+    color: crimson;
+    opacity: 1;
+  }
+
+  .Film-img:hover  {
+    color: crimson;
+    opacity: 0.3;
+  }
+    </style>
+  </head>
+
+  <body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script type="module" src="../index.js"></script>
+
+    <div class="cover-image">  <a href="../index.html"><img src="../images/NEWLOGO-remove.png"></a> </div>
+    <div class="profile-image"></div>
+    <div class="profile-name">Mario Rangel</div>
+    <div class="profile-description">
+       <b>Film Production Master's</b><br><br>Graduation Date: February 2023<br><br><br>
+        <a href="https://www.instagram.com/mariorangelhur/" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-instagram"></a>
+        <a href="https://linktr.ee/mariorangelhur" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-dribbble"></a>
+    </div>
+    <section>
+    <div class="MasteryJournal">
+      <video id="MasteryJournalMario" controls   width="420" height="240" autoplay  alt="MasteryJournal" ></video>
+     </div>
+    </section>
+    <section>
+        <div class="videos-container">
+
+      
+
+            <div class="video">
+                <video id="DetachedFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MarioRangelDetached.jpeg" alt="DETACHED" style="width:100%" ></video>
+                <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName">5 min | Sci-Fi</figcaption>
+            </div>
+
+
+            <div class="video">
+              <video id="BirthDayCakeFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MarioRnagel_BirthDayCake.png" alt="BirthDay Cake" style="width:100%" ></video>
+              <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName">6 min | Thriller</figcaption>
+            </div>
+
+
+            <div class="video">
+              <video id="TBWEGUFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MARIORANGELTBTEGU.jpeg" alt="TBWEGU" style="width:100%" ></video>
+                <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName">1 min | Thriller </figcaption>
+            </div>
+
+
+            <div class="video">
+              <video id="VanitasFilm" controls  class="Film-img" poster="../Films/Mario Rangel Films/MarioRangelVanitas.jpeg" alt="Vanitas" style="width:100%" ></video>                
+              <div class="middle">
+                </div>
+                <figcaptio class="Caption-FmName">6 min | Thriller </figcaption>
+            </div>
+          
+                  <div class="video">
+              <a href="https://www.youtube.com/watch?v=jQv0wg4-0IE&t=312s&ab_channel=MarioRangel"
+              ><img  class="Film-img" src="../Films/Mario Rangel Films/MarioRangelPICTOREM.jpeg" alt="PICTOREM" style="width:100%" /></a> 
+              <div class="middle">
+              </div>
+              <figcaptio class="Caption-FmName">7 min | Thriller </figcaption>
+          </div>
+
+            
+          </div> 
+    </section>
+
+    <section>
+
+      <div class="stickyActors">
+        <h2>Art from Students to Students</h2>
+        <a href="/Explore/Portafolio.html" class="hero-btn">Explore</a>
+      </div>
+      
+      </section>
+      
+  </body>
+</html>

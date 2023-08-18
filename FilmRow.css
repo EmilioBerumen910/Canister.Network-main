@@ -1,0 +1,87 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anybody', cursive;
+  overflow-x: hidden; 
+  
+}
+
+
+.Film-carousel{
+  background: white;
+}
+
+
+.Film-carousel h1{
+ padding-top: 30px;
+  font-size: 50px;
+  text-align: center;   
+}
+
+/*-----------------Film-Carousel---------------------*/
+
+.Film-carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  margin-right: 1rem;
+  margin-left: 2rem;
+  
+}
+
+.Film-carousel-slide {
+  flex-shrink: 0;
+  width: 90%;
+}
+
+.Film-carousel-slide {
+  width: 90%; 
+  height: auto; 
+}
+
+.Film-video {
+  width: 90%; /* Adjust the width as desired */
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto; /* Center the video within the slide */
+}
+
+
+.Film-video poster {
+  width: 90%; 
+  height: auto; 
+  object-fit: contain; 
+}
+
+
+.Film-carousel-slide figure video {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.Film-carousel-slide figure:hover video {
+	opacity: .5;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .Film-carousel-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+  
+  .Film-carousel-slide {
+    margin-right: 0;
+    scroll-snap-align: end;
+    width: 100%;
+   
+
+  }
+}
+
