@@ -97,6 +97,25 @@
     "image":"../images/PPs/SmokeTheRapper.jpg",
     "portafolio": "SmokeTheRapper.html"
   }
-
-
+  ,
+  {
+    "name": "Anairah",
+    "program": "Entertainment Business",
+    "image":"../images/PPs/Anairah.png",
+    "portafolio": "Anairah.html"
+  }
+  ,
+  {
+    "name": "Davi Hemann",
+    "program": "Music Production",
+    "image":"../images/PPs/DaviHMNN.jpg",
+    "portafolio": "DaviHemann.html"
+  }
+  ,
+  {
+    "name": "White Beatz",
+    "program": "Music Production",
+    "image":"../images/PPs/WhiteBeatz.jpeg",
+    "portafolio": "WhiteBeatz.html"
+  }
 ]
