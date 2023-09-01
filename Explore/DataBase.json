@@ -118,4 +118,25 @@
     "image":"../images/PPs/WhiteBeatz.jpeg",
     "portafolio": "WhiteBeatz.html"
   }
+  ,
+  {
+    "name": "Otuwa",
+    "program": "Recording Arts",
+    "image":"../images/PPs/Otuwa.png",
+    "portafolio": "Otuwa.html"
+  }
+  ,
+  {
+    "name": "JohnHernandez",
+    "program": "Recording Arts",
+    "image":"../images/PPs/JhonHernandez.jpg",
+    "portafolio": "JohnHernandez.html"
+  }
+  ,
+  {
+    "name": "Sofía Adamary",
+    "program": "Film Bachelor",
+    "image":"../images/PPs/SofiaAdamary.png",
+    "portafolio": "SofiaAdamry.html"
+  }
 ]

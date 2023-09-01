@@ -24,10 +24,16 @@ var BirthDayCakeFilm = storageRef.child('Films/Birthday Cake (2022) - Short Film
 var TBWEGUFilm = storageRef.child('Films/The Boy that eventually grow up.mp4');
 var VanitasFilm = storageRef.child('Films/VANITAS SHORT FILM.mp4');
 var MasteryJournalMario = storageRef.child('Films/MarioRangel_masteryjournal.mp4');
-var MasteryJournalNatalia = storageRef.child('Films/mastery journal natala gonzalez.mp4');
 var SabrosoFilm=storageRef.child('Films/SABROSO VIDEO.mp4');
-var ReelColorist =storageRef.child('Films/Reel Colorist 2022.mp4');
+var SleepingBEauty=storageRef.child('Films/Sleeping Beauty.mp4')
 
+
+SleepingBEauty.getDownloadURL().then(function(url) {
+  var videoElement = document.getElementById('SleepingBEauty');
+  videoElement.src = url;
+  }).catch(function(error) {
+  console.log(error);
+  });
 
 DETACHEDFilm.getDownloadURL().then(function(url) {
 var videoElement = document.getElementById('DetachedFilm');
@@ -65,12 +71,6 @@ BirthDayCakeFilm.getDownloadURL().then(function(url) {
     console.log(error);
     });
 
-    MasteryJournalNatalia.getDownloadURL().then(function(url) {
-      var videoElement = document.getElementById('MasteryJournalNatalia');
-      videoElement.src = url;
-      }).catch(function(error) {
-      console.log(error);
-      });
 
       SabrosoFilm.getDownloadURL().then(function(url) {
         var videoElement = document.getElementById('SabrosoFilm');
@@ -79,10 +79,5 @@ BirthDayCakeFilm.getDownloadURL().then(function(url) {
         console.log(error);
         });
 
-        ReelColorist.getDownloadURL().then(function(url) {
-          var videoElement = document.getElementById('ReelColorist');
-          videoElement.src = url;
-          }).catch(function(error) {
-          console.log(error);
-          });
+
 
