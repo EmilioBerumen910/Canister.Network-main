@@ -139,4 +139,18 @@
     "image":"../images/PPs/SofiaAdamary.png",
     "portafolio": "SofiaAdamry.html"
   }
+  ,
+  {
+    "name": "Mavelaz",
+    "program": "Music Production",
+    "image":"../images/PPs/Mavelaz.jpg",
+    "portafolio": "Mavelaz.html"
+  }
+  ,
+  {
+    "name": "TSUNAMIZZI",
+    "program": "Music Production",
+    "image":"../images/PPs/Zeke.jpeg",
+    "portafolio": "TSUNAMIZZI.html"
+  }
 ]
