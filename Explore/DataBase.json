@@ -153,4 +153,18 @@
     "image":"../images/PPs/Zeke.jpeg",
     "portafolio": "TSUNAMIZZI.html"
   }
+  ,
+  {
+    "name": "Dean So\\n\\Real Breezyy",
+    "program": "Recording Arts",
+    "image":"../images/PPs/DeanBrwon.jpg",
+    "portafolio": "DeanBrown.html"
+  }
+  ,
+  {
+    "name": "Jose Cruz",
+    "program": "Computer Animation",
+    "image":"../images/PPs/JoseCruz.jpg",
+    "portafolio": "JoseCruz.html"
+  }
 ]
