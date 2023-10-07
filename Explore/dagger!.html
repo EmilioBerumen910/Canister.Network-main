@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../FinalPartProfiles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Anybody', cursive;
+      }
+      .cover-image {
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/PhoenCanisterBackGround.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .cover-image a {
+        padding: 2rem; 
+        }
+      .profile-image {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        background-image: url('../images/PPs/Dagger!.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-top: -115px;
+        margin-left: 50px;
+        border: 5px solid #fff;
+      }
+      .profile-name {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-left: 400px;
+        margin-top: -205px;
+        color: black;
+        text-decoration: none;
+      }
+      .profile-description {
+        font-size: 1.5rem;
+        margin-left: 400px;
+        margin-top: 20px;
+        color: black;
+      }
+      
+    .profile-description a  {
+      color: red;
+    }
+
+    .Spotify-Embed {
+
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-bottom: 30px;
+
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script type="module" src="../index.js"></script>
+
+    <div class="cover-image">  <a href="../index.html"><img src="../images/NEWLOGO-remove.png"></a> </div>
+    <div class="profile-image"></div>
+    <div class="profile-name">Dagger!</div>
+    <div class="profile-description">
+       <b>Music Production</b><br><br>Graduation Date: January 2025<br><br><br>
+        <a href="https://www.instagram.com/dxggerr/" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-instagram"></a>  
+        <a href="https://linktr.ee/dxggerr" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-dribbble"></a>
+
+    </div>
+    <section>
+        <div class="Spotify-Embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0cxdTZVzj4hOjNdreGJ5OA?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+       
+
+    </section>
+
+    <section>
+
+      <div class="stickyActors">
+        <h2>Art from Students to Students</h2>
+        <a href="../Explore/Portafolio.html" class="hero-btn">Explore</a>
+      </div>
+      
+      </section>
+      
+  </body>
+</html>

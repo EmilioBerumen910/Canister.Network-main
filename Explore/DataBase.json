@@ -167,4 +167,18 @@
     "image":"../images/PPs/JoseCruz.jpg",
     "portafolio": "JoseCruz.html"
   }
+  ,
+  {
+    "name": "Dagger!",
+    "program": "Music Production",
+    "image":"../images/PPs/Dagger!.jpg",
+    "portafolio": "dagger!.html"
+  }
+  ,
+  {
+    "name": "Marco Lo Valvo",
+    "program": "Film Bachelor",
+    "image":"../images/PPs/MarcoLoVolvo.jpg",
+    "portafolio": "MarcoLoValvo.html"
+  }
 ]
