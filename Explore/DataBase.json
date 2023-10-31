@@ -181,4 +181,18 @@
     "image":"../images/PPs/MarcoLoVolvo.jpg",
     "portafolio": "MarcoLoValvo.html"
   }
+  ,
+  {
+    "name": "ABSTEMIUS",
+    "program": "Video Game",
+    "image":"../images/PPs/Abstemius.jpeg",
+    "portafolio": "Abstemius.html"
+  }
+  ,
+  {
+    "name": "Nicolas Bastidas",
+    "program": "Computer Animation",
+    "image":"../images/PPs/Nico.png",
+    "portafolio": "Nico.html"
+  }
 ]
