@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../FinalPartProfiles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Profile Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Anybody', cursive;
+    }
+
+    .cover-image {
+      width: 100%;
+      height: 300px;
+      background-image: url('../images/NEWBACKGORUNG.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cover-image a {
+      padding: 2rem;
+    }
+
+    .profile-image {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background-image: url('../images/PPs/Abstemius.jpeg');
+      background-size: cover;
+      background-position: center;
+      margin-top: -115px;
+      margin-left: 50px;
+      border: 5px solid #fff;
+    }
+
+    .profile-name {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-left: 400px;
+      margin-top: -205px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .profile-description {
+      font-size: 1.3rem;
+      margin-left: 400px;
+      margin-top: 20px;
+      color: black;
+    }
+
+
+    .profile-description a {
+      color: red;
+    }
+
+    .MasteryJournal video {
+      width: 30rem;
+      height: 20rem;
+      margin-top: 100PX;
+      margin-left: 50px;
+    }
+
+    .videos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 20px;
+      padding-top: 50px;
+      padding-bottom: 50PX;
+    }
+
+    .video {
+      width: 40rem;
+      box-sizing: border-box;
+      padding: 10px;
+      padding-left: 40px;
+    }
+
+    .video a {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .video:hover .middle {
+      color: crimson;
+      opacity: 1;
+    }
+
+    .Film-img:hover {
+      color: crimson;
+      opacity: 0.3;
+    }
+
+    .VGDescription {
+      height: 200px;
+      width: 50%;
+      padding-left: 40px;
+    }
+
+    .VGDescription p {
+      text-align: justify;
+      padding: 10px 0;
+      line-height: 1.2;
+    }
+
+    .flash-card {
+      display: inline-block;
+      /* Make flash cards inline */
+      width: 200px;
+      height: 400px;
+      text-align: center;
+      margin: 50px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #f2f2f2;
+      ;
+
+    }
+
+    .flash-card img {
+      max-width: 50%;
+    }
+
+    .flash-card .text {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+  <script type="module" src="../index.js"></script>
+  <div class="cover-image"> <a href="../index.html"><img src="../images/canister logo.png"></a> </div>
+  <div class="profile-image"></div>
+  <div class="profile-name">ABSTEMIUS</div>
+  <div class="profile-description">
+    <b>Video Game</b><br><br><br><br>
+
+    <a href="https://benjipliego.itch.io/abstemius" target="_blank" style="font-size:36px;" rel="noopener noreferrer"
+      class="fa fa-dribbble"></a>
+  </div>
+  <section>
+    <div class="video">
+      <a target="_blank"
+        href="https://www.youtube.com/watch?v=nqi88PiZw3Y&ab_channel=Jos%C3%A9Benjam%C3%ADnPliegoEnciso"><img
+          class="Film-img" src="../Films/Abstemius Films/Teaser.jpeg" alt="ReelColorist" style="width:100%" /></a>
+      <div class="middle">
+      </div>
+      <figcaptio class="Caption-FmName">1 min | Demo </figcaption>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="VGDescription">
+      <p>Your name is Aidan Glance, you are a condecorated soldier that empties bottles like no other man to fight
+        against the demons of your past. Last night you went out to party and you blacked out without being able to
+        remember anything. Your gut tells you that you might have done something terrible. It's time to wake up and to
+        figure out the truth of this mystery.</p>
+      <ul>
+        <li>Platform: PC </li>
+        <li>Genre: Psychological-Thriller / FPS</li>
+        <li>Ages: 18+</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="flash-card">
+    <div class="text">
+      <h2>José Benjamín Pliego Enciso </h2>
+      <p>Programming, Level Design, Story, Cinematics and UI.</p>
+      <a href="https://www.instagram.com/benjipliego/" style="font-size:36px;" target="_blank" rel="noopener noreferrer"
+        class="fa fa-instagram"></a>
+    </div>
+    <img src="../images/PPs/Benjamin.jpeg" alt="Image 1">
+  </div>
+
+
+
+
+  <section>
+
+    <div class="stickyActors">
+      <h2>Art from Students to Students</h2>
+      <a href../Explore/Portafolio.html" class="hero-btn">Explore</a>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
