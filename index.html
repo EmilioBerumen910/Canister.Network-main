@@ -2,90 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canister</title>
-    <link rel="stylesheet" href="connecting.css">
-    <link rel="stylesheet" href="VideoGallery.css">
-    <link rel="stylesheet" href="FinalPart.css">
-    <link rel="stylesheet" href="Themes.css">
-    <link rel="stylesheet" href="FilmRow.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canister</title>
+  <link rel="stylesheet" href="connecting.css">
+  <link rel="stylesheet" href="VideoGallery.css">
+  <link rel="stylesheet" href="FinalPart.css">
+  <link rel="stylesheet" href="Themes.css">
+  <link rel="stylesheet" href="FilmRow.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <style>
+  <style>
+    .navbar {
+      background-color: #fba92c;
+      overflow: hidden;
+      text-align: center;
+    }
 
-.flash-card {
-            display: flex;
-            flex-direction: column;
-            background-color:  #f2f2f2;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 10px;
-        }
-        .flash-card-image {
-            text-align: center;
-        }
-        .flash-card-image img {
-            max-width: 40%;
-            border-radius: 50%;
-        }
-        .flash-card-content {
-            text-align: justify;
-            padding: 10px 0;
-        }
-        .video-container {
-            text-align: center;
-        }
-        iframe {
-            max-width: 100%;
-        }
-
-        a{
-    color: #fba92c;
-    padding-right: 30px;
-  }
-
-  a:link{
-    text-decoration: none;
-  }
-        @media screen and (min-width: 768px) {
-            .flash-card {
-                flex-direction: row;
-            }
-            .flash-card-image {
-                flex: 1;
-                text-align: center;
-                margin-right: 10px;
-            }
-            .flash-card-content {
-                flex: 2;
-            }
-            .video-container {
-                flex: 1;
-                text-align: center;
-            }
-        }
+    .navbar a {
+      align-items: center;
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
 
 
-    </style>
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: grey;
+    }
+
+    .section {
+      height: 500px;
+    }
+  </style>
 
 </head>
-<body>  
 
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
-<script type="module" src="index.js"></script>
+<body>
 
 
-<section>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+  <script type="module" src="index.js"></script>
+
+
+  <section>
     <ul>
       <li><a href="ContactUS.html">Contact Us</a></li>
       <li><a href="FAQs.html">FAQs</a></li>
@@ -95,248 +69,352 @@
       <video autoplay loop muted playsinline class="back-video">
         <source src="images/Pexels Videos 2512876.mp4" type="video/mp4">
       </video>
-        <div class="content">
+      <div class="content">
         <h1>Canister</h1>
         <a href="Explore/Portafolio.html" class="hero-btn">Explore</a>
       </div>
     </div>
   </section>
-<!-------------------------------------------------Who are we-------------------------------------------------->
-<section class="pilars">
-    <h1>Art from Students to Students</h1>
-    <p>Canister is a Web Platafrom where Full Sail students in any degree can share their art.</p>
-</section>
 
-<!-------------------------------------------------Students-------------------------------------------------->
-<section class="Student-Carousel">
-  <h1 class="Students title">Filmmakers to<br>follow</h1>
-  <a href="Explore/Portafolio.html" class="hero-btn" style="display: flex; justify-content: center;">See All Filmmakers</a>
-  <div class="Student-carousel-container">
-
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/MarioRangel.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/MarioRangelBio.jpg" alt="Mario Rangel" class="profile__image"></a></figure>
-      <div class="profile__name">Mario<br> Rangel</div>
-      <div class="profile__title">Film Production Master's</div>
-      <div class="profile__date">Graduation Date: February 2023</div>
-    </div>
-
-
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/JacobHightower.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/JacobHightower.jpg" alt="Jacob Hightower" class="profile__image"></a></figure>
-      <div class="profile__name">Jacob Hightower</div>
-      <div class="profile__title">Film Production Master's</div>
-      <div class="profile__date">Graduation Date: September 2022</div>
-    </div>
-
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/NataliaGonzales.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/NataliaGonzales.jpg" alt="Natalia Gonzales" class="profile__image"></a></figure>
-      <div class="profile__name">Natalia Gonzales</div>
-      <div class="profile__title">Film Production Master's</div>
-      <div class="profile__date">Graduation Date: April 2023</div>
-    </div>
-
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/MateoBekich.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/MateoBekich.jpg" alt="Mateo Bekich" class="profile__image"></a></figure>
-      <div class="profile__name">Mateo<br> Bekich</div>
-      <div class="profile__title">Bachelor of Science in Film</div>
-      <div class="profile__date">Graduation Date: May 2023</div>
-    </div>
+  <div class="navbar">
+    <a href="#filmsection">Film</a>
+    <a href="#themsection">Themes</a>
+    <a href="#musicsection">Music</a>
   </div>
-</section>
 
-<!-------------------------------------------------Films Carousel-------------------------------------------------->
+  <!-------------------------------------------------Who are we-------------------------------------------------->
+  <section class="pilars">
+    <h1>Art from Students to Students</h1>
+    <p>Canister is a Web Platafrom where Full Sail students in any degree can share their work.</p>
+  </section>
 
-<section class="Film-carousel">
-    <h1 >New Films</h1>
+  <!------------------------------------------------Video Game------------------------------------------------------>
+  <section>
+
+    <div class="flash-card">
+      <div class="flash-card-image"
+        style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="images/PPs/Abstemius.jpeg" alt="Profile Image">
+      </div>
+      <div class="flash-card-content">
+        <h2
+          style="  letter-spacing: 5px;  display: flex; flex-direction: column; justify-content: center;align-items: center;padding-bottom:20px;">
+          ABSTEMIUS | Video Game </h2>
+        <p style="  letter-spacing: 2px;line-height: 1.9 ; padding-bottom:20px;">In the video game, you play as Aidan
+          Glance, a decorated soldier who battles inner demons by drinking heavily. After a night of partying and
+          blacking out, Aidan is haunted by the fear that he committed a terrible act. The game centers on Aidan's
+          journey to uncover the truth of this mystery.</p>
+        <a href="https://benjipliego.itch.io/abstemius" target="_blank" style="font-size:36px;"
+          rel="noopener noreferrer" class="fa fa-dribbble"></a>
+        <a href="https://www.canister.network/Explore/Abstemius.html" target="_blank" style="font-size:36px;"
+          rel="noopener noreferrer" class="fa fa-briefcase"></a>
+
+      </div>
+
+      <div class="video-container">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="500 " height="300"
+          type="text/html" src="https://www.youtube.com/embed/nqi88PiZw3Y?autoplay=1">
+          <div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div>
+          <div><small><a href="https://casinoutanspelpaustrustly.se/">casino utan spelpaus trustly</a></small></div>
+        </iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------Students-------------------------------------------------->
+  <section class="Student-Carousel" id="filmsection">
+    <h1 class="Students title">Filmmakers to<br>follow</h1>
+    <a href="Explore/Portafolio.html" class="hero-btn" style="display: flex; justify-content: center;">See All
+      Filmmakers</a>
+    <div class="Student-carousel-container">
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/MarioRangel.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/MarioRangelBio.jpg" alt="Mario Rangel" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Mario<br> Rangel</div>
+        <div class="profile__title">Film Production Master's</div>
+        <div class="profile__date">Graduation Date: February 2023</div>
+      </div>
+
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/JacobHightower.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/JacobHightower.jpg" alt="Jacob Hightower" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Jacob Hightower</div>
+        <div class="profile__title">Film Production Master's</div>
+        <div class="profile__date">Graduation Date: September 2022</div>
+      </div>
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/NataliaGonzales.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/NataliaGonzales.jpg" alt="Natalia Gonzales"
+              class="profile__image">
+          </a></figure>
+        <div class="profile__name">Natalia Gonzales</div>
+        <div class="profile__title">Film Production Master's</div>
+        <div class="profile__date">Graduation Date: April 2023</div>
+      </div>
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/MateoBekich.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/MateoBekich.jpg" alt="Mateo Bekich" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Mateo<br> Bekich</div>
+        <div class="profile__title">Bachelor of Science in Film</div>
+        <div class="profile__date">Graduation Date: May 2023</div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------Films Carousel-------------------------------------------------->
+
+  <section class="Film-carousel">
+    <h1>New Films</h1>
     <div class="Film-carousel-container">
 
       <div class="Film-carousel-slide">
 
-        <a style="text-decoration: none; color: black;"target="_blank"   href="https://www.youtube.com/watch?v=E7FeNCy8geA&ab_channel=MykytaKrav%C4%8Denko">
-          <figure> <video class="Film-video" target="_blank" poster="Films/Mykyta Kravčenko Films/Naighbors.png"></video></figure>
-          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/MykytaKtavčenko.html"><br>  4 min | Music Video |Mykyta Kravčenko</a></figcaption>
+        <a style="text-decoration: none; color: black;" target="_blank"
+          href="https://www.youtube.com/watch?v=E7FeNCy8geA&ab_channel=MykytaKrav%C4%8Denko">
+          <figure> <video class="Film-video" target="_blank"
+              poster="Films/Mykyta Kravčenko Films/Naighbors.png"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;"
+              href="Explore/MykytaKtavčenko.html"><br> 4 min | Music Video |Mykyta Kravčenko</a></figcaption>
         </a>
 
 
       </div>
 
       <div class="Film-carousel-slide">
-        <a style="text-decoration: none; color: black;"target="_blank"   href="https://www.youtube.com/watch?v=-E7UJKVSz4M&ab_channel=FabiolaCampos">
-          <figure> <video class="Film-video" target="_blank" poster="Films/Fabiola Campos Films/BlueBerryMuffin.jpeg"></video></figure>
-          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/FabiolaCampos.html"><br> 4 min | Comedy | FabioLa Campos</a></figcaption>
+        <a style="text-decoration: none; color: black;" target="_blank"
+          href="https://www.youtube.com/watch?v=-E7UJKVSz4M&ab_channel=FabiolaCampos">
+          <figure> <video class="Film-video" target="_blank"
+              poster="Films/Fabiola Campos Films/BlueBerryMuffin.jpeg"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;"
+              href="Explore/FabiolaCampos.html"><br> 4 min | Comedy | FabioLa Campos</a></figcaption>
         </a>
       </div>
 
       <div class="Film-carousel-slide">
-        <a style="text-decoration: none; color: black;"target="_blank"  href="https://www.youtube.com/watch?v=ScCgNEe1Chg&ab_channel=MateoBekich">
-          <figure> <video class="Film-video"poster="Films/Mateo Bekich Films/LoverMan.jpeg">
-          </video></figure>
-          <figcaption class="Caption-FmName" > <a style="text-decoration: none; color: #fba92c;" href="Explore/MateoBekich.html"><br> 9 min | Comedy | Mateo Bekich</a> </figcaption>
+        <a style="text-decoration: none; color: black;" target="_blank"
+          href="https://www.youtube.com/watch?v=ScCgNEe1Chg&ab_channel=MateoBekich">
+          <figure> <video class="Film-video" poster="Films/Mateo Bekich Films/LoverMan.jpeg">
+            </video></figure>
+          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;"
+              href="Explore/MateoBekich.html"><br> 9 min | Comedy | Mateo Bekich</a> </figcaption>
         </a>
       </div>
 
       <div class="Film-carousel-slide">
-        <a style="text-decoration: none; color: black;"target="_blank"  href="https://www.youtube.com/watch?v=6Pd8ETWHsKo&ab_channel=JakeHightower">
+        <a style="text-decoration: none; color: black;" target="_blank"
+          href="https://www.youtube.com/watch?v=6Pd8ETWHsKo&ab_channel=JakeHightower">
           <figure> <video class="Film-video" poster="Films/Jacob Hightower/Appettie.jpeg">
-          </video></figure>
-          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;" href="Explore/JacobHightower.html"><br> 4 min | Terror | Jacob HighTower </a></figcaption>
+            </video></figure>
+          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;"
+              href="Explore/JacobHightower.html"><br> 4 min | Terror | Jacob HighTower </a></figcaption>
         </a>
       </div>
-      
+
     </div>
   </section>
 
-<!-----------------------------------------------------Themes---------------------------------------------------------->
-<section class="Theme">
+  <!-----------------------------------------------------Themes---------------------------------------------------------->
+  <section class="Theme" id="themsection">
 
     <h1>Watch Short Film</h1>
 
 
     <div class="Themerow">
-        <div class="Theme-col">
-            <div class="grow">
-                <a href="Themes/TerrorTheme.html"> <img src="images/ThemeImages/Terror.jpeg" alt="Terror" style="width:85%"></a>
+      <div class="Theme-col">
+        <div class="grow">
+          <a href="Themes/TerrorTheme.html"> <img src="images/ThemeImages/Terror.jpeg" alt="Terror"
+              style="width:85%"></a>
         </div>
-        </div>
-        <div class="Theme-col">
-            <div class="grow">
-                <a href="Themes/ComedyTheme.html"> <img src="images/ThemeImages/Comedy.jpeg" alt="Comedy" style="width:85%"></a>
-            </div>
-        </div>
-        <div class="Theme-col">
-            <div class="grow">
-                <a href="Themes/DramaTheme.html"> <img src="images/ThemeImages/Drama.jpeg" alt="Drama" style="width:85%"></a>
-            </div>
-        </div>
-        <div class="Theme-col">
-            <div class="grow">
-                <a href="Themes/BioTheme.html"> <img src="images/ThemeImages/Bio.jpeg" alt="Bio" style="width:85%"></a>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<!------------------------------------------------Computer Animation------------------------------------------------------>
-<section  >
-
-  <div class="flash-card">
-    <div class="flash-card-image" style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <img src="images/PPs/JoseCruz.jpg" alt="Profile Image">
-    </div>
-    <div class="flash-card-content">
-        <h2 style="  letter-spacing: 5px;  display: flex; flex-direction: column; justify-content: center;align-items: center;padding-bottom:20px;">Jose Cruz | Computer animation Student</h2>
-        <p style="  letter-spacing: 2px;line-height: 1.9 ; padding-bottom:20px;" >Jose Cruz is a talented Colombian animator currently pursuing his studies at Full Sail. His ultimate goal is to become a renowned animation director in well-established studios. He is always open to engage in conversations and actively listens to others.</p>
-        <a href="https://www.instagram.com/joe_animator/" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-instagram"></a>
-        <a href="https://www.linkedin.com/in/jose-david-cruz-alvarez-6426311b2/" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-dribbble"></a>
-        <a href="https://www.canister.network/Explore/JoseCruz.html" target="_blank" style="font-size:36px;"  rel="noopener noreferrer" class="fa fa-briefcase"></a>
-      
       </div>
-      
-    <div class="video-container">
-      <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="500 " height="300" type="text/html" src="https://www.youtube.com/embed/yrqafkugr94?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://casinoutanspelpaustrustly.se/">casino utan spelpaus trustly</a></small></div></iframe>
+      <div class="Theme-col">
+        <div class="grow">
+          <a href="Themes/ComedyTheme.html"> <img src="images/ThemeImages/Comedy.jpeg" alt="Comedy"
+              style="width:85%"></a>
+        </div>
+      </div>
+      <div class="Theme-col">
+        <div class="grow">
+          <a href="Themes/DramaTheme.html"> <img src="images/ThemeImages/Drama.jpeg" alt="Drama" style="width:85%"></a>
+        </div>
+      </div>
+      <div class="Theme-col">
+        <div class="grow">
+          <a href="Themes/BioTheme.html"> <img src="images/ThemeImages/Bio.jpeg" alt="Bio" style="width:85%"></a>
+        </div>
+      </div>
+      <div class="Theme-col">
+        <div class="grow">
+          <a href="Themes/InterviewsTheme.html"> <img src="images/ThemeImages/InterViewsjpeg.jpeg" alt="Interviews"
+              style="width:85%"></a>
+        </div>
+      </div>
+    </div>
 
-     </div>
-</div>
+  </section>
 
+  <!------------------------------------------------Computer Animation------------------------------------------------------>
+  <section>
 
+    <div class="flash-card">
+      <div class="flash-card-image"
+        style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="images/PPs/JoseCruz.jpg" alt="Profile Image">
+      </div>
+      <div class="flash-card-content">
+        <h2
+          style="  letter-spacing: 5px;  display: flex; flex-direction: column; justify-content: center;align-items: center;padding-bottom:20px;">
+          Jose Cruz | Computer animation Student</h2>
+        <p style="  letter-spacing: 2px;line-height: 1.9 ; padding-bottom:20px;">Jose Cruz is a talented Colombian
+          animator currently pursuing his studies at Full Sail. His ultimate goal is to become a renowned animation
+          director in well-established studios. He is always open to engage in conversations and actively listens to
+          others.</p>
+        <a href="https://www.instagram.com/joe_animator/" target="_blank" style="font-size:36px;"
+          rel="noopener noreferrer" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/jose-david-cruz-alvarez-6426311b2/" target="_blank" style="font-size:36px;"
+          rel="noopener noreferrer" class="fa fa-dribbble"></a>
+        <a href="https://www.canister.network/Explore/JoseCruz.html" target="_blank" style="font-size:36px;"
+          rel="noopener noreferrer" class="fa fa-briefcase"></a>
 
+      </div>
 
+      <div class="video-container">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="500 " height="300"
+          type="text/html"
+          src="https://www.youtube.com/embed/yrqafkugr94?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+          <div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div>
+          <div><small><a href="https://casinoutanspelpaustrustly.se/">casino utan spelpaus trustly</a></small></div>
+        </iframe>
 
-</section>
-<!-------------------------------------------------Musician's------------------------------------------------------>
-
-<section class="Student-Carousel">
-  <h1 class="Students title">Musician's to<br>follow</h1>
-  <a href="Explore/Portafolio.html" class="hero-btn"  style="display: flex; justify-content: center;">See All Musicians</a>
-  <div class="Student-carousel-container">
-
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/SmokeTheRapper.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/SmokeTheRapper.jpg" alt="Celestino Duley" class="profile__image"></a></figure>
-      <div class="profile__name">Smoke<br> TheRapper</div>
-      <div class="profile__title">Recording arts</div>
-      <div class="profile__date">Graduation Date: August 2024</div>
+      </div>
     </div>
 
 
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/Otuwa.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/Otuwa.png" alt="Sheiq" class="profile__image"></a></figure>
-      <div class="profile__name">Otuwa<br></div>
-      <div class="profile__title">Recording Arts</div>
-      <div class="profile__date">Graduation Date: May 2024</div>
+
+
+
+  </section>
+  <!-------------------------------------------------Musician's------------------------------------------------------>
+
+  <section class="Student-Carousel" id="musicsection">
+    <h1 class="Students title">Musician's to<br>follow</h1>
+    <a href="Explore/Portafolio.html" class="hero-btn" style="display: flex; justify-content: center;">See All
+      Musicians</a>
+    <div class="Student-carousel-container">
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/SmokeTheRapper.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/SmokeTheRapper.jpg" alt="Celestino Duley" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Smoke<br> TheRapper</div>
+        <div class="profile__title">Recording arts</div>
+        <div class="profile__date">Graduation Date: August 2024</div>
+      </div>
+
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/Otuwa.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/Otuwa.png" alt="Sheiq" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Otuwa<br></div>
+        <div class="profile__title">Recording Arts</div>
+        <div class="profile__date">Graduation Date: May 2024</div>
+      </div>
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/Anairah.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/Anairah.png" alt="David Trujillo" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Anairah</div>
+        <div class="profile__title">Entertainment Business</div>
+        <div class="profile__date">Graduation Date: November 2024</div>
+      </div>
+
+      <div class="Student-carousel-slide">
+        <figure><a href="Explore/JohnHernandez.html" style="text-decoration: none;">
+            <h3>Visit Profile</h3><img src="images/PPs/JhonHernandez.jpg" alt="DavidTrujillo" class="profile__image">
+          </a></figure>
+        <div class="profile__name">Jhon <br>Hernandez</div>
+        <div class="profile__title">Recording Arts</div>
+        <div class="profile__date">Graduation Date: June 2024</div>
+      </div>
+
+  </section>
+
+  <!-------------------------------------------------New Music-------------------------------------------------->
+
+  <section class="Film-carousel">
+    <h1>New Music</h1>
+    <div class="Film-carousel-container">
+
+      <div class="Film-carousel-slide">
+        <a target="_blank" style="text-decoration: none; color: black;"
+          href="https://www.youtube.com/watch?v=nr6fsdPsn1g&ab_channel=Sheiq">
+          <figure> <video class="Film-video" poster="Films/Sheiq Films/LaDeSiempreMusicVideo.png"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;"
+              href="Explore/Sheiq.html"><br> Latin Music | Sheiq</a></figcaption>
+        </a>
+
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a target="_blank" style="text-decoration: none; color: black;"
+          href="https://www.youtube.com/watch?v=tdOOK3l4IlU&ab_channel=ApolloCosmo">
+          <figure> <video class="Film-video" poster="Films/Apollo Cosmo Films/Homeostais.png"></video></figure>
+          <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;"
+              href="Explore/ApolloCosmo.html"><br> Rap | Apollo Cosmo</a></figcaption>
+        </a>
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a target="_blank" style="text-decoration: none; color: black;"
+          href="https://www.youtube.com/watch?v=d2wqGGUJ3po&ab_channel=JuanHerrera">
+          <figure> <video class="Film-video" poster="Films/Juan Herrera Films/DejameIr.png">
+            </video></figure>
+          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;"
+              href="Explore/JuanHerrera.html"><br> Latin Music | Juan Herrera </a> </figcaption>
+        </a>
+      </div>
+
+      <div class="Film-carousel-slide">
+        <a target="_blank" style="text-decoration: none; color: black;"
+          href="https://www.youtube.com/watch?v=DcpWyNqNMpY&ab_channel=ANAIRAH">
+          <figure> <video class="Film-video" poster="Films/Anairah Films/Problemas.jpeg">
+            </video></figure>
+          <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;"
+              href="Explore/Anairah.html"><br> Latin | Anairah </a></figcaption>
+        </a>
+      </div>
+
     </div>
 
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/Anairah.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/Anairah.png" alt="David Trujillo" class="profile__image"></a></figure>
-      <div class="profile__name">Anairah</div>
-      <div class="profile__title">Entertainment Business</div>
-      <div class="profile__date">Graduation Date: November 2024</div>
+
+  </section>
+
+
+
+
+
+  <!-------------------------------------------------Final Zone-------------------------------------------------->
+
+
+  <section>
+
+    <div class="sticky">
+      <h2>Art from Students to Students</h2>
     </div>
 
-    <div class="Student-carousel-slide">
-      <figure><a href="Explore/JohnHernandez.html"style="text-decoration: none;"><h3 >Visit Profile</h3><img src="images/PPs/JhonHernandez.jpg" alt="DavidTrujillo" class="profile__image"></a></figure>
-      <div class="profile__name">Jhon <br>Hernandez</div>
-      <div class="profile__title">Recording Arts</div>
-      <div class="profile__date">Graduation Date: June 2024</div>
-    </div>
-
-</section>
-
-<!-------------------------------------------------New Music-------------------------------------------------->
-
-<section class="Film-carousel">
-  <h1 >New Music</h1>
-  <div class="Film-carousel-container">
-
-    <div class="Film-carousel-slide">
-      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=nr6fsdPsn1g&ab_channel=Sheiq">
-        <figure> <video class="Film-video" poster="Films/Sheiq Films/LaDeSiempreMusicVideo.png"></video></figure>
-        <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/Sheiq.html"><br> Latin Music | Sheiq</a></figcaption>
-      </a>
-
-    </div>
-
-    <div class="Film-carousel-slide">
-      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=tdOOK3l4IlU&ab_channel=ApolloCosmo">
-        <figure> <video class="Film-video" poster="Films/Apollo Cosmo Films/Homeostais.png"></video></figure>
-        <figcaption class="Caption-FmName"><a style="text-decoration: none; color: #fba92c;" href="Explore/ApolloCosmo.html"><br> Rap | Apollo Cosmo</a></figcaption>
-      </a>
-    </div>
-
-    <div class="Film-carousel-slide">
-      <a target="_blank" style="text-decoration: none; color: black;" href="https://www.youtube.com/watch?v=d2wqGGUJ3po&ab_channel=JuanHerrera">
-        <figure> <video class="Film-video"poster="Films/Juan Herrera Films/DejameIr.png">
-        </video></figure>
-        <figcaption class="Caption-FmName" > <a style="text-decoration: none; color: #fba92c;" href="Explore/JuanHerrera.html"><br> Latin Music | Juan Herrera </a> </figcaption>
-      </a>
-    </div>
-
-    <div class="Film-carousel-slide">
-      <a target="_blank" style="text-decoration: none; color: black;"  href="https://www.youtube.com/watch?v=DcpWyNqNMpY&ab_channel=ANAIRAH">
-        <figure> <video class="Film-video" poster="Films/Anairah Films/Problemas.jpeg">
-        </video></figure>
-        <figcaption class="Caption-FmName"> <a style="text-decoration: none; color: #fba92c;" href="Explore/Anairah.html"><br> Latin | Anairah </a></figcaption>
-      </a>
-    </div>
-    
-  </div>
-
-  
-</section>
-
-<!-------------------------------------------------Final Zone-------------------------------------------------->
-
-
-<section>
-
-  <div class="sticky">
-    <h2>Art from Students to Students</h2>
-  </div>
-
-</section>
+  </section>
 
 
 
 </body>
-</html>
 
+</html>
