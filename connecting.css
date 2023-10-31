@@ -291,3 +291,59 @@ color: #fba92c;
   }
 }
 
+
+/*Bar of specific people */
+
+.flash-card {
+  display: flex;
+  flex-direction: column;
+  background-color:  #f2f2f2;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+.flash-card-image {
+  text-align: center;
+}
+.flash-card-image img {
+  max-width: 40%;
+  border-radius: 50%;
+}
+.flash-card-content {
+  text-align: justify;
+  padding: 10px 0;
+  padding-right:40px ;
+}
+.video-container {
+  text-align: center;
+}
+iframe {
+  max-width: 100%;
+}
+
+a{
+color: #fba92c;
+padding-right: 30px;
+}
+
+a:link{
+text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .flash-card {
+      flex-direction: row;
+  }
+  .flash-card-image {
+      flex: 1;
+      text-align: center;
+      margin-right: 10px;
+  }
+  .flash-card-content {
+      flex: 2;
+  }
+  .video-container {
+      flex: 1;
+      text-align: center;
+  }
+}
+
